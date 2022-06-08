@@ -1,0 +1,282 @@
+@media (max-width: 768px) {
+    .logo {
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+
+        padding-left: 1.2rem;
+    }
+
+    .bar {
+        display: block;
+        margin-right: 2rem;
+        margin: 1rem;
+        cursor: pointer;
+
+    }
+
+    .navbar {
+        background: rgba(6, 6, 6, 0.81);
+
+        margin: 0;
+        /* justify-content: center; */
+        margin: 0 0rem 0px 0rem;
+
+    }
+
+    .navbar ul {
+        z-index: 7777;
+        display: flex;
+        gap: 0.1;
+        margin: 0 0 0 0;
+        flex-direction: column;
+
+    }
+
+    .navbar li {
+        width: 80vw;
+        border-bottom: 0px solid rgb(255, 255, 255);
+
+    }
+
+    .nav {
+        height: 100%;
+        transition: all 0.1s;
+
+
+    }
+
+    .nav-item {
+        display: flex;
+        position: absolute;
+        z-index: 7777;
+        top: 3.6rem;
+        padding: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.1s;
+
+    }
+
+    .animated {
+        transition: all 0.2s;
+        background: rgba(6, 6, 6, 0.865);
+        padding-top: 2rem;
+        height: 350px;
+    }
+
+
+    .scrollbar{
+        width: 100%;
+        height: 4px;
+        background-color: rgba(14, 13, 13, 0.855);
+    }
+
+
+}
+
+@media (max-width:506px) {
+    .bg .text {
+        display: none;
+    }
+    .hidden-text{
+        display: flex;
+        font-size: 6rem;
+        font-weight: 700;
+        color: white;
+        width: 100vw;
+        height:900px;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+    .form .input{
+    margin: 10px 30px;
+
+    }
+}
+@media (max-width:768px) {
+
+    .first {
+        background-image: url(../static/men.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 900px;
+        background-color: rgba(0, 146, 81, 0.414);
+
+        overflow-x: hidden;
+    }
+
+    .bg {
+
+        padding: 0em 0px;
+        width: 100%;
+        overflow: hidden
+    }
+
+    .bg .text {
+        text-transform: lowercase;
+        position: absolute;
+        z-index: 7;
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px;
+        font-size: 10em;
+        font-weight: 700;
+        /* background-color: red; */
+        color: white;
+    }
+
+    .bg .he {
+        position: relative;
+        top: 0em;
+        text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.29);
+    }
+
+    .bg .llo {
+        position: relative;
+        top: -0.4em;
+        width: 100%;
+    }
+
+    .bg .men-img {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        display: none;
+
+    }
+
+    .men-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .about {
+        flex-direction: column;
+    }
+    .about .info{
+        width: 80%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 10px 10%;
+    }
+
+
+
+    .services{
+        margin: 80px 5%;
+        
+    }
+
+
+    .bg-form{
+
+        height: 200px;
+        width: 100%;
+        background-color: rgb(0, 146, 80);
+        /* background-color: rgba(146, 0, 0, 0.858); */
+        margin-top: -150px;
+    }
+}
+
+
+@media (max-width:1440px) {
+    .bg .text {
+        width: 50%;
+        height: 100%;
+        margin: 0.1em 0em;
+        font-size: 27em;
+        font-weight: 700;
+
+        /* background-color: red; */
+        color: white;
+    }
+    .service{
+        margin: 10px 10px;
+        padding: 30px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.184);
+        
+    }
+    .contact-us .form{
+        width: 60%;
+    }
+}
+
+@media (max-width:1024px) {
+    .contact-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 5%;
+        height: auto;
+        overflow-x: hidden;
+    
+    }
+    .contact-us .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    .contact-us .address{
+        padding: 30px;
+        width: 100%;
+    }
+
+
+
+    .contact-us .form{
+        width: 100%;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.107);
+
+    }
+
+    .bg-form .social-media{
+        width: 100%;
+        align-self: end;
+    }
+}
+
+@media (max-width:1438px) {
+
+    
+}
+
+@media (max-width:425px) {
+    .form input{
+        padding: 0px 0px 0 5px;
+        width: 100%;
+        height: 40px;
+        border: 2px solid rgba(0, 146, 80, 0.858);
+    }
+    .form textarea{
+        padding: 5px 0px 0 5px;
+
+    }
+
+.contact-us .form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0px;
+    padding: 20px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.106);
+    
+}
+    
+}

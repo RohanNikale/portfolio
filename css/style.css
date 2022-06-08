@@ -1,0 +1,420 @@
+:root{
+    --bg:rgb(0, 146, 80);
+    --bg2: rgba(83,97,255,255);
+}
+
+/* ::-webkit-scrollbar
+{
+  width:12px;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color:rgba(83,97,255,255);
+} */
+
+
+html{
+    scroll-behavior: smooth;
+}
+main{
+    overflow-x:hidden;
+}
+body{
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--bg); */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+.me{
+    right: 0;
+    display: flex;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    z-index: 776;
+    display: none;
+}
+.my-name{
+    margin-top: 200px;
+    background-color: rgb(255, 250, 250);
+    writing-mode: vertical-rl;
+text-orientation: mixed;
+    height: 200px;
+    width: 40px;
+    position: absolute;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scrollbar{
+    width: 100%;
+    height: 4px;
+    background-color: rgba(14, 13, 13, 0.595);
+}
+.scrollbar .scrollr{
+    height: 4px;
+    background-color: var(--bg);
+}
+
+
+/* nav bar section */
+nav{
+    font-size: 1.2rem;
+    position: absolute;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 3rem;
+}
+.navbar{
+    margin: 0 5rem 0px 5rem;
+    display: flex;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+}
+.navbar a{
+        color: white;
+    text-decoration: none;
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+
+}
+#nav a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid rgb(0, 129, 243);
+}
+
+.navbar .active{
+    text-decoration: none;
+    border-bottom: 3px solid rgb(0, 129, 243);
+}
+.logo,.bar{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.bar{
+    font-size: 1.4rem;
+    display: none;
+}
+
+.navbar ul{
+    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    
+}
+.navbar {
+    justify-content: space-between;
+}
+
+.scroll{
+    background-color: rgb(0, 0, 0);
+    height: 65px;
+    transition: all 0.3s;
+}
+
+
+
+/* middle section */
+
+.hidden-text {
+    display: none
+}
+
+section .bg{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+}
+
+.first{
+
+    width: 100%;
+    height: 900px;
+    background-color:rgb(98, 153, 201);
+    overflow-x: hidden;
+}
+.bg{
+
+    width: 100%;
+    overflow: hidden
+    
+
+}
+.bg .text{
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    width: 50%;
+    height: 100%;
+    margin: 0.1em 0.2em;
+    font-size: 27em;
+    font-weight: 750;
+    
+    /* background-color: red; */
+    color: white;
+}
+.bg .he{
+
+    text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.566);
+}
+.bg .llo{
+    position: relative;
+    top: -0.4em;
+}
+.bg .men-img{
+
+    width: 50%;
+    height: 100%;
+    background-color:rgba(0, 146, 81, 0.414);
+    bottom: 0;
+}
+.men-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* about section */
+
+.about{
+    margin: 50px 0px ;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* border: 1px solid red; */
+    
+}
+.about .img{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 50px;
+    background-color:rgb(98, 153, 201);
+
+
+}
+.about img{
+    width: 250px;
+}
+
+.about .info{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    background-color: rgb(255, 255, 255);
+    box-shadow:6px 6px 10px rgba(0, 0, 0, 0.101);
+    padding:30px;
+    /* border-radius: 20px; */
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20%;
+}
+/* skill section  */
+
+.skill{
+    width: 100%;
+    height: 13px;
+    background-color: rgba(0, 0, 0, 0.177);
+}
+.skill .skill-bar{
+    width: 0;
+    height: 13px;
+    background-color:rgba(0, 146, 81, 0.414);
+}
+.skill-name{
+    margin:17px 0;
+}
+
+
+
+/* services section */
+
+.hedding{
+    font-size: 2.5em;
+
+}
+.services{
+    margin: 80px 20%;
+    
+}
+.services .work{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service{
+    margin: 10px 10px;
+    padding: 30px;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.184);
+    /* border-radius:20px */
+    
+}
+
+
+
+/* contact section  */
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15%;
+    /* background-color: red; */
+
+}
+.contact-us .contact{
+    display: flex;
+    justify-content: center;
+
+}
+.contact-us .address{
+    padding: 20px;
+    width: 50%;
+    
+}
+.contact p{
+    width: 80%;
+    font-size: 1.1em;
+}
+.method i{
+    font-size: 2em;
+    width: 60px;
+    color: rgb(0, 146, 80);
+}
+.method .data{
+    width: 70px;
+}
+.method{
+    margin: 20px 0; 
+    font-weight: bold;
+}
+.contact-us .form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0px;
+    padding: 20px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.106);
+
+    
+    
+}
+
+.form input{
+    padding: 0px 0px 0 10px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgba(0, 146, 80, 0.858);
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.form textarea{
+    padding: 10px 0px 0 10px;    
+    border: 2px solid rgba(0, 146, 80, 0.858);
+    width: 100%;
+    /* height: 30px; */
+    resize:vertical;
+}
+.form .input{
+    margin: 10px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form input[type="submit"]{
+    background-color: rgba(0, 146, 80, 0.858);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+/* footer section */
+.bg-form{
+
+    display: flex;
+    height: 180px;
+    width: 100%;
+    height: 240px;
+    background-color: rgba(0, 146, 80, 0.858);
+    /* background-color: rgba(146, 0, 0, 0.858); */
+    margin-top: -150px;
+}
+.bg-form .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:50%;
+    margin:10px 10px;
+    font-size: 4em;
+    color: white;
+}
+.social a{
+    margin: 0 20px;
+    color: white;
+}
+.social a:hover{
+    margin: 0 20px;
+    color: rgb(141, 141, 141);
+}
+footer{
+    height: auto;
+}
+.footer{
+    background-color: rgba(11, 11, 11, 0.969);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    /* font-weight: 700; */
+}
